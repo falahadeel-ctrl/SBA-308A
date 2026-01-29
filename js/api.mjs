@@ -18,7 +18,7 @@ export async function getRandomCats(limit = 10) {
   try {
     const response = await catAPI.get('/images/search', {
       params: {
-        limit: limit,
+        limit: limit,  
         size: 'med'
       }
     });
